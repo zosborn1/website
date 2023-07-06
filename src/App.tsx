@@ -4,8 +4,8 @@ import './App.css';
 import Navbar from './routes/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import Home from './routes/Home';
-import About from './routes/about';
-import Presentation from './routes/presentation';
+import About from './routes/About';
+import Presentation from './routes/Presentation';
 
 function App() {
   return (
