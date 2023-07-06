@@ -18,9 +18,8 @@ export const PageWrapper = styled.div`
     justify-content: flex-start;
     align-items: center;
     flex-grow: 1;
-    height: calc(100vh - 80px);
+    height: 100vh;
     width: 100vw;
-    padding: 16px 0 0 0;
     overflow-y: scroll;
     overflow-x: hidden;
     animation: ${onLoad} 0.55s ease-out;
