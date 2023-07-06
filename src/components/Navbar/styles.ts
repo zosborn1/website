@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
 export const NavbarWrapper = styled.header`
-    position: fixed;
+    height: auto;
+    width: 100%;
     display: flex;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0);
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-    @media (max-width: 768px) {
-        padding: 8px;
-    }
+    align-items: center;
+    position: relative;
+    padding: 0.5rem 0rem;
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
 `;
 
 export const NavBarHeaderContentWrapper = styled.div`
