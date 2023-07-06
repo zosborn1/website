@@ -1,13 +1,13 @@
 import { JSX } from "react/jsx-runtime";
 import Navbar from "../../organisms/Navbar/Navbar"
 import { IHomeProps } from "./types";
-import { HomePageWrapper } from "./styles";
+import { PageColorWrapper } from "../../../styles/global-styles";
 
 const Home = ({ children }: IHomeProps): JSX.Element => {
     return (
-        <HomePageWrapper>
+        <PageColorWrapper>
             <Navbar/>
-        </HomePageWrapper>
+        </PageColorWrapper>
     );
 }
 export default Home

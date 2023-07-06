@@ -1,7 +1,13 @@
-const Presentation = (props: any) => {
+import { JSX } from "react/jsx-runtime";
+import Navbar from "../../organisms/Navbar/Navbar"
+import { IPresentationProps } from "./types";
+import { PageColorWrapper } from "../../../styles/global-styles";
 
+const Presentation = ({ children }: IPresentationProps): JSX.Element => {
     return (
-        <h1>Presentation Page</h1>
+        <PageColorWrapper>
+            <Navbar/>
+        </PageColorWrapper>
     );
 }
 export default Presentation

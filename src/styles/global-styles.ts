@@ -32,6 +32,12 @@ export const PageWrapper = styled.div`
     //border: red solid 1px;
 `;
 
+export const PageColorWrapper = styled.body`
+  height: 100%;
+  width: 100%;
+  background-color: rgba(240,148,129,255);
+`;
+
 export const SCContentDivision = styled.div`
     padding: 16px 16px 16px 16px;
     background-color: transparent;

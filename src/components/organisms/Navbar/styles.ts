@@ -21,7 +21,7 @@ export const NavBarHeaderContentWrapper = styled.div`
     gap: 20px;
     align-content: flex-end;
     width: 100vw;
-    height: 120px;
+    height: 100px;
     max-width: 100%;
     @media (max-width: 768px) {
         height: 60px;
@@ -34,15 +34,24 @@ export const NavBarHeaderContentWrapper = styled.div`
 `;
 
 export const LinkWrapper = styled.h1`
-    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+    align-items: center;
+    align-content: flex-end;
+    width: 100%;
+    height: fit-content;
 `;
 
 export const ZOLink = styled(Link)`
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 200;
-    color: rgba(235,231,217,255);
     padding: 5px;
+    margin: 5px;
+    color: rgba(235,231,217,255);
     border: 1px solid rgb(78,47,48,255);
     border-radius: 10px;
     background: rgba(245,81,57,255);
+    text-decoration:none;
 `;
