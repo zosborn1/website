@@ -1,23 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './routes/Navbar';
-import { Route, Routes } from 'react-router-dom';
-import Home from './routes/Home';
-import About from './routes/About';
-import Presentation from './routes/Presentation';
+import { PageWrapper } from './styles/global-styles';
+import { JSX } from 'react/jsx-runtime';
+import RouterHash from './routes/RouterHash';
 
-function App() {
+function App(): JSX.Element {
   return (
-    <>
-    <Navbar />
-
-    <Routes>
-      <Route path="/" element={<Home/>} />
-      <Route path="/about" element={<About/>} />
-      <Route path="/presentation" element={<Presentation/>} />
-    </Routes>
-    </>
+    <PageWrapper>
+      <RouterHash/>
+    </PageWrapper>
   );
 }
 
