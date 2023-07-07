@@ -1,31 +1,81 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { JSX } from "react/jsx-runtime";
 import { INavBarProps } from "./types";
 import { 
     LinkWrapper,
-    LogoWrapper,
     NavBarHeaderContentWrapper, 
     NavbarWrapper, 
     ZOLink,
-    SCHeaderContent
+    HeaderImageWrapper,
+    MenuWrapper
 } from "./styles";
-import logo from '../../../assets/logo.png';
+import logo from '../../../assets/navLogo.jpg';
+import Hamburger from 'hamburger-react'
+import { inherits } from 'util';
+import { AppBar, Button, Drawer, IconButton, List, ListItem, Toolbar, Typography } from '@mui/material';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = ({ children }: INavBarProps): JSX.Element => {
+    const [drawerOpen, setDrawerOpen] = useState(false);
+
+    const toggleDrawer = (open: boolean) => {
+        setDrawerOpen(open)
+    }
+
+    const MenuLinks = (
+        <>
+            <ZOLink 
+                to="/" 
+                style={{ textDecoration: 'none', color: 'inherit' }}
+            >
+                <Button>
+                    Home
+                </Button>
+            </ZOLink>
+            <ZOLink
+                to="/presentation"
+            >
+                <Button>Presentation</Button>
+            </ZOLink>
+            <ZOLink
+                to="/about"
+                style={{ textDecoration: 'none', color: 'inherit' }}
+            >
+                <Button>
+                    About
+                </Button>
+            </ZOLink>
+        </>
+    );
+
     return (
         <NavbarWrapper>
             <NavBarHeaderContentWrapper >
-                <SCHeaderContent>
-                    <LogoWrapper>
-                        <img style= {{height: undefined, width: undefined}}src={logo} loading="lazy" alt="logo"></img>
-                    </LogoWrapper>
-                </SCHeaderContent>
-
+                <HeaderImageWrapper>
+                    <img 
+                        style={{height: 50}} 
+                        src={logo} 
+                        loading="lazy" 
+                        alt="logo"
+                    />
+                </HeaderImageWrapper>
                 <LinkWrapper>
-                    <ZOLink to="/">Home</ZOLink>
-                    <ZOLink to="/presentation">Intern Presentation</ZOLink>
-                    <ZOLink to="/about">About</ZOLink>
+                    {MenuLinks}
                 </LinkWrapper>
+                <MenuWrapper>
+                    <IconButton onClick={() => toggleDrawer(true)}>
+                        <Hamburger/>
+                    </IconButton>
+                    <Drawer
+                        anchor='top'
+                        open={drawerOpen}
+                        onClick={() => toggleDrawer(false)}
+                    >
+                        <List>
+                            <ListItem>{MenuLinks}</ListItem>
+                        </List>
+                    </Drawer>
+                </MenuWrapper>
             </NavBarHeaderContentWrapper>
         </NavbarWrapper>
     )

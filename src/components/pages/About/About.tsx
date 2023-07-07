@@ -6,7 +6,6 @@ import Navbar from "../../organisms/Navbar/Navbar";
 const Home = ({ children }: IAboutProps): JSX.Element => {
     return (
         <PageColorWrapper>
-            <Navbar/>
         </PageColorWrapper>
     );
 }

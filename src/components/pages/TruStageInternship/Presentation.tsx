@@ -6,7 +6,6 @@ import { PageColorWrapper } from "../../../styles/global-styles";
 const Presentation = ({ children }: IPresentationProps): JSX.Element => {
     return (
         <PageColorWrapper>
-            <Navbar/>
         </PageColorWrapper>
     );
 }
