@@ -6,8 +6,8 @@ import Footer from "../../organisms/Footer/Footer";
 
 const Home = ({ children }: IHomeProps): JSX.Element => {
     return (
-        <PageColorWrapper>
-        </PageColorWrapper>
+    <>
+    </>
     );
 }
 export default Home

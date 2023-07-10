@@ -5,10 +5,7 @@ import Navbar from './components/organisms/Navbar/Navbar';
 
 function App(): JSX.Element {
   return (
-    <PageWrapper>
-      <Navbar/>
-      <RouterHash/>
-    </PageWrapper>
+    <RouterHash/>
   );
 }
 
