@@ -2,82 +2,49 @@ import React, { useState } from 'react';
 import { JSX } from "react/jsx-runtime";
 import { INavBarProps } from "./types";
 import { 
-    LinkWrapper,
-    NavBarHeaderContentWrapper, 
-    NavbarWrapper, 
-    ZOLink,
-    HeaderImageWrapper,
-    MenuWrapper
+  ZOcontent,
+  ZOLink,
+  ZOToolbar
 } from "./styles";
 import logo from '../../../assets/navLogo.jpg';
-import Hamburger from 'hamburger-react'
-import { inherits } from 'util';
-import { AppBar, Button, Drawer, IconButton, List, ListItem, Toolbar, Typography } from '@mui/material';
-import { NavLink } from 'react-router-dom';
 
 const Navbar = ({ children }: INavBarProps): JSX.Element => {
-    const [drawerOpen, setDrawerOpen] = useState(false);
 
-    const toggleDrawer = (open: boolean) => {
-        setDrawerOpen(open)
-    }
+  const menuSelections = [
+    {title: 'Home', url: '/'},
+    {title: 'Presentation', url: '/presentation'},
+    {title: 'About', url: '/about'}
+  ]
 
-    const MenuLinks = (
-        <>
-            <ZOLink 
-                to="/" 
-                style={{ textDecoration: 'none', color: 'inherit' }}
-            >
-                <Button>
-                    Home
-                </Button>
-            </ZOLink>
+
+  return (
+    <React.Fragment>
+      <ZOToolbar
+        variant="dense"
+        sx={{ justifyContent: 'center', overflowX: 'auto', gap: 20 }}
+      >
+        <ZOcontent>
+          <img 
+              style={{height: 70}} 
+              src={logo} 
+              loading="lazy" 
+              alt="logo"
+          />
+        </ZOcontent>
+        <ZOcontent >
+          {menuSelections.map((section) => (
             <ZOLink
-                to="/presentation"
+              color="inherit"
+              key={section.title}
+              to={section.url}
             >
-                <Button>Presentation</Button>
+              {section.title}
             </ZOLink>
-            <ZOLink
-                to="/about"
-                style={{ textDecoration: 'none', color: 'inherit' }}
-            >
-                <Button>
-                    About
-                </Button>
-            </ZOLink>
-        </>
-    );
-
-    return (
-        <NavbarWrapper>
-            <NavBarHeaderContentWrapper >
-                <HeaderImageWrapper>
-                    <img 
-                        style={{height: 50}} 
-                        src={logo} 
-                        loading="lazy" 
-                        alt="logo"
-                    />
-                </HeaderImageWrapper>
-                <LinkWrapper>
-                    {MenuLinks}
-                </LinkWrapper>
-                <MenuWrapper>
-                    <IconButton onClick={() => toggleDrawer(true)}>
-                        <Hamburger/>
-                    </IconButton>
-                    <Drawer
-                        anchor='top'
-                        open={drawerOpen}
-                        onClick={() => toggleDrawer(false)}
-                    >
-                        <List>
-                            <ListItem>{MenuLinks}</ListItem>
-                        </List>
-                    </Drawer>
-                </MenuWrapper>
-            </NavBarHeaderContentWrapper>
-        </NavbarWrapper>
-    )
+          ))}
+        </ZOcontent>
+      </ZOToolbar>
+      
+    </React.Fragment>
+  )
 }
 export default Navbar;

@@ -29,7 +29,8 @@ export const PageWrapper = styled.div`
 export const PageColorWrapper = styled.body`
   height: 100vh;
   width: 100vw;
-  background-color: rgba(240,148,129,255);
+  //background-color: rgba(240,148,129,255);
+  background-color: rgba(249,246,240,255);
 `;
 
 export const ZOContentDivision = styled.div`
