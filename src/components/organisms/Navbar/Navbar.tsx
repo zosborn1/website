@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { JSX } from "react/jsx-runtime";
 import { INavBarProps } from "./types";
 import { 
-  ZOcontent,
+  ZONoneMobileContent,
   ZOLink,
   ZOToolbar
 } from "./styles";
@@ -12,39 +12,35 @@ const Navbar = ({ children }: INavBarProps): JSX.Element => {
 
   const menuSelections = [
     {title: 'Home', url: '/'},
-    {title: 'Presentation', url: '/presentation'},
-    {title: 'About', url: '/about'}
+    {title: 'About', url: '/about'},
+    {title: 'Presentation', url: '/presentation'}
   ]
 
-
   return (
-    <React.Fragment>
-      <ZOToolbar
-        variant="dense"
-        sx={{ justifyContent: 'center', overflowX: 'auto', gap: 20 }}
-      >
-        <ZOcontent>
-          <img 
-              style={{height: 70}} 
-              src={logo} 
-              loading="lazy" 
-              alt="logo"
-          />
-        </ZOcontent>
-        <ZOcontent >
-          {menuSelections.map((section) => (
-            <ZOLink
-              color="inherit"
-              key={section.title}
-              to={section.url}
-            >
-              {section.title}
-            </ZOLink>
-          ))}
-        </ZOcontent>
-      </ZOToolbar>
-      
-    </React.Fragment>
+    <ZOToolbar
+      variant="dense"
+      sx={{ justifyContent: 'center', overflowX: 'auto', gap: 20 }}
+    >
+      <ZONoneMobileContent>
+        <img 
+            style={{height: 80}} 
+            src={logo} 
+            loading="lazy" 
+            alt="logo"
+        />
+      </ZONoneMobileContent>
+      <ZONoneMobileContent >
+        {menuSelections.map((section) => (
+          <ZOLink
+            color="inherit"
+            key={section.title}
+            to={section.url}
+          >
+            {section.title}
+          </ZOLink>
+        ))}
+      </ZONoneMobileContent>
+    </ZOToolbar>
   )
 }
 export default Navbar;

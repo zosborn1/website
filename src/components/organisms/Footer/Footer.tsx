@@ -9,7 +9,7 @@ import { IFooterProps } from "./types";
 
 function Copyright() {
     return (
-      <Typography variant="body2" color="text.secondary">
+      <Typography variant="body2" color="rgba(235,231,217,255)">
         {'Copyright © '}
         {new Date().getFullYear()}
         {'.'}
@@ -29,16 +29,13 @@ const Footer = ({ children }: IFooterProps): JSX.Element => {
                 py: 3,
                 px: 2,
                 mt: 'auto',
-                backgroundColor: (theme) =>
-                    theme.palette.mode === 'light'
-                    ? theme.palette.grey[200]
-                    : theme.palette.grey[800],
+                backgroundColor: 'rgba(15,34,45,255)'
                 }}
             >
                 <Container maxWidth="sm">
-                <Typography variant="body1" color='blue'>
-                    zosborn@wisc.edu | {'   '}  
-                    <Link color="inherit" href="https://www.linkedin.com/in/zachosborn/">
+                <Typography variant="body1" color='rgba(235,231,217,255)'>
+                    zosborn@wisc.edu | {''}  
+                    <Link color="rgba(235,231,217,255)" href="https://www.linkedin.com/in/zachosborn/"  target="_blank">
                       LinkedIn
                     </Link>{' '}
                 </Typography>
