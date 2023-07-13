@@ -38,6 +38,6 @@ export const ContentCenter = styled.div`
 
 export const ImageWrapper = styled.div`
     border-radius: 20px;
-    height: auto;
+    height: 90%;
     width: auto;
 `;

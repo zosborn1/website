@@ -26,7 +26,24 @@ export const ZOLink = styled(NavLink )`
 
 export const ZONoneMobileContent = styled.div`
     //border: red solid 1px;
-    @media (max-width: 987px) {
+    width: 33%;
+    @media (max-width: 1176px) {
         display: none;
       }
+`;
+
+export const ZOHomeButton = styled.div`
+    //border: red solid 1px;
+    width: 33%;
+    @media (max-width: 1176px) {
+        
+    }
+`;
+
+export const ZOLogo = styled.div`
+    //border: red solid 1px;
+    width: 33%;
+    @media (max-width: 1176px) {
+        width: 77%
+    }
 `;
