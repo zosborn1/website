@@ -37,7 +37,8 @@ export const ZONoneMobileContent = styled.div`
 export const ZOHomeButton = styled.div`
     //border: red solid 1px;
     width: 33%;
-    gap: 20px;
+    display: block;
+    align-content: space-evenly;
     @media (max-width: 1176px) {
         
     }
