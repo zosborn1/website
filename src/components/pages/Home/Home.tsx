@@ -29,9 +29,6 @@ const Home = ({ children }: IHomeProps): JSX.Element => {
             <Typography variant="h6" align="left" color="rgba(235,231,217,255)" paragraph>
                 - Presentation - to learn about my current internship at Trustage
             </Typography>
-            <Typography variant="h6" align="left" color="rgba(235,231,217,255)" paragraph>
-                - Contact - send me a message and link to my LinkedIn
-            </Typography>
         </>
     ]
     return (

@@ -6,31 +6,36 @@ import {
   ZOLink,
   ZOToolbar,
   ZOHomeButton,
-  ZOLogo
+  ZOLogo,
+  ZOLinkedInButton
 } from "./styles";
 import logo from '../../../assets/navLogo.jpg';
 import HomeIcon from '@mui/icons-material/Home';
-import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Navbar = ({ children }: INavBarProps): JSX.Element => {
 
   const menuSelections = [
     {title: 'About', url: '/about'},
-    {title: 'Presentation', url: '/presentation'},
-    {title: 'Contact', url: '/contact'}
+    {title: 'Presentation', url: '/presentation'}
   ]
 
   return (
     <ZOToolbar
       variant="dense"
-      sx={{ justifyContent: 'center', overflowX: 'auto', gap: 20, alignContent: 'center' }}
+      sx={{ justifyContent: 'center', overflowX: 'auto', alignContent: 'center' }}
     >
       <ZOHomeButton>
         <Link
           to='/'
           >
             <HomeIcon fontSize='large' style={{fill: 'rgba(235,231,217,255)'}}/>
+          </Link>
+          <Link
+          to="https://www.linkedin.com/in/zachosborn/"  target="_blank"
+          >
+            <LinkedInIcon fontSize='large' style={{fill: 'rgba(235,231,217,255)'}}/>
           </Link>
       </ZOHomeButton>
       <ZOLogo>

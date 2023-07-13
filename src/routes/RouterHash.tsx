@@ -1,5 +1,4 @@
 import { JSX } from "react/jsx-runtime";
-import { SCRoutesWrapper } from "./styles";
 import { Route, Routes } from "react-router-dom";
 import Home from "../components/pages/Home/Home";
 import About from "../components/pages/About/About";

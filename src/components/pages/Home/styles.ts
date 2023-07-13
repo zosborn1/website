@@ -17,6 +17,11 @@ export const PageColumn = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1023px) {
+    display: flex;
+    height: 90%;
+    overflow: clip;
+  }
 `;
 
 export const PageRow = styled.div`
@@ -27,6 +32,7 @@ export const PageRow = styled.div`
         display: table;
         clear: both;
     }
+    
 `;
 
 export const ContentCenter = styled.div`
@@ -34,10 +40,16 @@ export const ContentCenter = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 1023px) {
+        display: flex;
+        height: 90%;
+        overflow: clip;
+      }
 `;
 
 export const ImageWrapper = styled.div`
     border-radius: 20px;
     height: 90%;
     width: auto;
+    //padding: 5%;
 `;

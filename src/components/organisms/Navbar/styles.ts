@@ -8,6 +8,7 @@ export const ZOToolbar = styled(Toolbar)`
     borderBottom: 1;
     borderColor: divider;
     position: fixed;
+    //width: 100vw;
     box-shadow: 0 4px 2px 2px rgba(9, 9, 9, 0.23);
 `;
 
@@ -27,6 +28,7 @@ export const ZOLink = styled(NavLink )`
 export const ZONoneMobileContent = styled.div`
     //border: red solid 1px;
     width: 33%;
+    right: 0;
     @media (max-width: 1176px) {
         display: none;
       }
@@ -35,6 +37,7 @@ export const ZONoneMobileContent = styled.div`
 export const ZOHomeButton = styled.div`
     //border: red solid 1px;
     width: 33%;
+    gap: 20px;
     @media (max-width: 1176px) {
         
     }
@@ -44,6 +47,14 @@ export const ZOLogo = styled.div`
     //border: red solid 1px;
     width: 33%;
     @media (max-width: 1176px) {
-        width: 77%
+        width: 100%;
+    }
+`;
+
+export const ZOLinkedInButton = styled.div`
+    //border: red solid 1px;
+    width: 15%;
+    @media (max-width: 1176px) {
+        
     }
 `;
