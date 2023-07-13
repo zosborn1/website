@@ -28,7 +28,8 @@ export const ZOLink = styled(NavLink )`
 export const ZONoneMobileContent = styled.div`
     //border: red solid 1px;
     width: 33%;
-    right: 0;
+    display: flex;
+    justify-content: flex-end;
     @media (max-width: 1176px) {
         display: none;
       }
@@ -37,7 +38,9 @@ export const ZONoneMobileContent = styled.div`
 export const ZOHomeButton = styled.div`
     //border: red solid 1px;
     width: 33%;
-    display: block;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
     align-content: space-evenly;
     @media (max-width: 1176px) {
         
@@ -47,8 +50,13 @@ export const ZOHomeButton = styled.div`
 export const ZOLogo = styled.div`
     //border: red solid 1px;
     width: 33%;
+    display: flex;
+    justify-content: center;
     @media (max-width: 1176px) {
         width: 100%;
+    }
+    @media (max-width: 460px) {
+        display: none;
     }
 `;
 
