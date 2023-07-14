@@ -47,8 +47,8 @@ export const ContentColumn = styled.div`
     justify-content: center;
     //align-items: center;
     flex-direction: column;
-    overflow: auto;
-    padding: 5px;
+    //overflow: auto;
+    //padding: 5px;
 `;
 
 export const SubHeader = styled.h1`
