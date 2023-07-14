@@ -2,26 +2,55 @@ import { JSX } from "react/jsx-runtime";
 import { PageColorWrapper } from "../../../styles/global-styles";
 import { IAboutProps } from "./types";
 import { Typography } from "@mui/material";
-import { AboutPageWrapper, AboutContentWrapper, AboutImageWrapper } from "./styles";
+import { 
+    AboutPageWrapper, 
+    AboutContentWrapper, 
+    AboutImageWrapper, 
+    ContentContainer,
+    ContentColumn,
+    SubHeader,
+    SubInfo
+} from "./styles";
 import ZOBox from "../../molecules/ZOBox/ZOBox";
 
 import travel from '../../../assets/travel.jpeg';
 import maisie from '../../../assets/maisie.jpeg';
 import skydiving from '../../../assets/skydiving.jpg';
+import uwMadison from '../../../assets/uwMadison.png';
 
 const About = ({ children }: IAboutProps): JSX.Element => {
 
-    const Main = [
-        <>
-            <Typography
-                variant="h4"
-                align="center"
-                color="text.primary"
-                gutterBottom
-            >
-                Currently still being worked on
-            </Typography>
-        </>
+    const AboutContent = [
+        <ContentContainer>
+            <ContentColumn>
+                <SubHeader>
+                    Collage Info
+                </SubHeader>
+                <SubInfo>
+                    - Senior at UW-Madison
+                </SubInfo>
+                <SubInfo>
+                    - BS in Computer Science
+                </SubInfo>
+                <SubInfo>
+                    - Graduate May, 2024
+                </SubInfo>
+            </ContentColumn>
+            <ContentColumn>
+                <SubHeader>
+                    Fun Facts
+                </SubHeader>
+                <SubInfo>
+                    - Love to travel with wife, been to 15 countries
+                </SubInfo>
+                <SubInfo>
+                    - Have a diabetic cat named Maisie
+                </SubInfo>
+                <SubInfo>
+                    - Have been skydiving for 6 years and am close to 500 jumps
+                </SubInfo>
+            </ContentColumn>
+        </ContentContainer>
     ]
 
     return (
@@ -61,8 +90,9 @@ const About = ({ children }: IAboutProps): JSX.Element => {
                 </AboutImageWrapper>
                 <AboutContentWrapper>
                     <ZOBox
-                        height='90%'
+                        height='auto'
                         width='70%'
+                        content={AboutContent}
                     />
 
                 </AboutContentWrapper>
