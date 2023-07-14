@@ -3,9 +3,9 @@ import styled from 'styled-components';
 export const WelcomeContentWrapper = styled.div`
   //border: blue solid 1px;
   display: grid;
-  justify-items: center;
+  //justify-items: center;
   align-content: center;
-  align-items: center;
+  //align-items: center;
   height: 100%;
   width: 75%;
   float: left;

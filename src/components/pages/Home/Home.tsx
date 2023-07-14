@@ -13,19 +13,20 @@ const Home = ({ children }: IHomeProps): JSX.Element => {
             <Typography
                 component="h1"
                 variant="h2"
+                align='center'
                 color="text.primary"
                 gutterBottom
             >
                 Welcome
             </Typography>
             <br/>
-            <Typography variant="h4"color="rgba(235,231,217,255)" paragraph>
+            <Typography variant="h4" align="left" color="rgba(235,231,217,255)" paragraph>
                 Please click the tabs above:
             </Typography>
-            <Typography variant="h6" color="rgba(235,231,217,255)" paragraph>
+            <Typography variant="h6" align="left" color="rgba(235,231,217,255)" paragraph>
                 - About - to learn more about myself
             </Typography>
-            <Typography variant="h6" color="rgba(235,231,217,255)" paragraph>
+            <Typography variant="h6" align="left" color="rgba(235,231,217,255)" paragraph>
                 - Presentation - to learn about my current internship at Trustage
             </Typography>
         </WelcomeContentWrapper>
@@ -35,8 +36,11 @@ const Home = ({ children }: IHomeProps): JSX.Element => {
         <PageColorWrapper>
             <RowContent
                 content={WelcomeContent}
-                height='100vh'
-                width='100%'
+                rowHeight='100%'
+                rowWidth='100%'
+                contentHeight="60%"
+                contentWidth="80%"
+                imageHeight="80%"
                 imageSrc={photo}
             />
         </PageColorWrapper>

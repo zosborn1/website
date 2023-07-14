@@ -4,20 +4,29 @@ import { ContentWrapper, ImageWrapper, PageColumn } from "./styles";
 import ZOBox from "../../molecules/ZOBox/ZOBox";
 
 
-const RowContent = ({ content, imageSrc, height, width, children }: IRowContentProps): JSX.Element => {
+const RowContent = ({ 
+    content, 
+    imageSrc, 
+    rowHeight, 
+    rowWidth, 
+    contentHeight,
+    contentWidth,
+    imageHeight,
+    children 
+}: IRowContentProps): JSX.Element => {
     return (
-        <PageColumn style={{height: height, width: width}}>
-            <ContentWrapper>
+        <PageColumn style={{height: rowHeight, width: rowWidth }}>
+            <ContentWrapper style={{height: contentHeight, width: contentWidth}}>
                 <ZOBox
                     height={'100%'}
                     width={'100%'}
                     content={content}
                 />
             </ContentWrapper>
-            <ImageWrapper>
+            <ImageWrapper style={{height: imageHeight}}>
                 <img
                     style={{ 
-                        height: '80%', 
+                        height: 'inherit', 
                         borderRadius: '20px',
                         boxShadow: '-10px 10px 10px rgba(15,34,45,10)' }}
                     src={imageSrc} 

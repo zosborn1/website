@@ -1,10 +1,13 @@
 import { JSX } from "react/jsx-runtime";
-import { isStringLiteral } from "typescript";
+import { StringLiteral, isStringLiteral } from "typescript";
 
 export interface IRowContentProps {
     children?: JSX.Element | JSX.Element[];
-    height?: string;
-    width?: string;
+    rowHeight?: string;
+    rowWidth?: string;
+    contentHeight?: string;
+    contentWidth?: string;
+    imageHeight?: string;
     content?: any;
     imageSrc?: string;
 }
