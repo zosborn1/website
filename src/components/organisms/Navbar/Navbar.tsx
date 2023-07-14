@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { JSX } from "react/jsx-runtime";
 import { INavBarProps } from "./types";
 import { 
@@ -6,8 +5,7 @@ import {
   ZOLink,
   ZOToolbar,
   ZOHomeButton,
-  ZOLogo,
-  ZOLinkedInButton
+  ZOLogo
 } from "./styles";
 import logo from '../../../assets/navLogo.jpg';
 import HomeIcon from '@mui/icons-material/Home';

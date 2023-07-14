@@ -1,8 +1,7 @@
 import { JSX } from "react/jsx-runtime";
 import { PageColorWrapper } from "../../../styles/global-styles";
 import { IAboutProps } from "./types";
-import Navbar from "../../organisms/Navbar/Navbar";
-import ZOBox from "../../organisms/ZOBox/ZOBox";
+import ZOBox from "../../molecules/ZOBox/ZOBox";
 import { Typography } from "@mui/material";
 
 const About = ({ children }: IAboutProps): JSX.Element => {

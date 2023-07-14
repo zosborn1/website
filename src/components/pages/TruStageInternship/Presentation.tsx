@@ -1,9 +1,8 @@
 import { JSX } from "react/jsx-runtime";
-import Navbar from "../../organisms/Navbar/Navbar"
 import { IPresentationProps } from "./types";
 import { PageColorWrapper } from "../../../styles/global-styles";
 import { Typography } from "@mui/material";
-import ZOBox from "../../organisms/ZOBox/ZOBox";
+import ZOBox from "../../molecules/ZOBox/ZOBox";
 
 const Presentation = ({ children }: IPresentationProps): JSX.Element => {
     const Main = [

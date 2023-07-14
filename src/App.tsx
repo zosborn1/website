@@ -6,11 +6,15 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
 import { FooterPadding } from './styles/global-styles';
 
-const defaultTheme = createTheme();
+const theme = createTheme({
+  typography: {
+    fontFamily: "Courier"
+  }
+});
 
 function App(): JSX.Element {
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
       <Navbar/>
       <RouterHash/>
