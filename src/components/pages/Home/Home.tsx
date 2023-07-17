@@ -16,6 +16,7 @@ const Home = ({ children }: IHomeProps): JSX.Element => {
                 align='center'
                 color="text.primary"
                 gutterBottom
+                fontWeight={600}
             >
                 Welcome
             </Typography>
@@ -33,17 +34,15 @@ const Home = ({ children }: IHomeProps): JSX.Element => {
     ]
     
     return (
-        <PageColorWrapper>
-            <RowContent
-                content={WelcomeContent}
-                rowHeight='100%'
-                rowWidth='100%'
-                contentHeight="60%"
-                contentWidth="80%"
-                imageHeight="80%"
-                imageSrc={photo}
-            />
-        </PageColorWrapper>
+        <RowContent
+            content={WelcomeContent}
+            rowHeight='100%'
+            rowWidth='100%'
+            contentHeight="60%"
+            contentWidth="80%"
+            imageHeight="80%"
+            imageSrc={photo}
+        />
     );
 }
 export default Home

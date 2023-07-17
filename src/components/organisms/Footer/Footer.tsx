@@ -18,30 +18,28 @@ function Copyright() {
 const defaultTheme = createTheme();
 
 const Footer = ({ children }: IFooterProps): JSX.Element => {
-    return (
-        <ThemeProvider theme={defaultTheme}>
-            <Box
-                component="footer"
-                sx={{
-                justifyContent: 'center',
-                py: 3,
-                px: 2,
-                mt: 'auto',
-                backgroundColor: 'rgba(15,34,45,255)'
-                }}
-            >
-                <Container maxWidth="sm">
-                <Typography variant="body1" color='rgba(235,231,217,255)'>
-                    zosborn@wisc.edu | {''}  
-                    <Link color="rgba(235,231,217,255)" href="https://www.linkedin.com/in/zachosborn/"  target="_blank">
-                      LinkedIn
-                    </Link>{' '}
-                </Typography>
+  return (
+    <Box
+        component="footer"
+        sx={{
+        justifyContent: 'center',
+        py: 3,
+        px: 2,
+        mt: 'auto',
+        backgroundColor: 'rgba(15,34,45,255)'
+        }}
+    >
+        <Container maxWidth="sm">
+        <Typography variant="body1" color='rgba(235,231,217,255)'>
+            zosborn@wisc.edu | {''}  
+            <Link color="rgba(235,231,217,255)" href="https://www.linkedin.com/in/zachosborn/"  target="_blank">
+              LinkedIn
+            </Link>{' '}
+        </Typography>
 
-                <Copyright />
-                </Container>
-            </Box>
-        </ThemeProvider>
-        );
+        <Copyright />
+        </Container>
+    </Box>
+  );
 }
 export default Footer;

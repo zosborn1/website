@@ -24,7 +24,7 @@ const About = ({ children }: IAboutProps): JSX.Element => {
         <ContentContainer>
             <ContentColumn>
                 <SubHeader>
-                    Collage Info
+                    College Info
                 </SubHeader>
                 <SubInfo>
                     - Senior at UW-Madison
@@ -33,7 +33,7 @@ const About = ({ children }: IAboutProps): JSX.Element => {
                     - BS in Computer Science
                 </SubInfo>
                 <SubInfo>
-                    - Graduate May, 2024
+                    - Graduating May 2024
                 </SubInfo>
             </ContentColumn>
             <ContentColumn>
@@ -41,63 +41,61 @@ const About = ({ children }: IAboutProps): JSX.Element => {
                     Fun Facts
                 </SubHeader>
                 <SubInfo>
-                    - Love to travel with wife, been to 15 countries
+                    - I love to travel with my wife, I have been to 15 countries
                 </SubInfo>
                 <SubInfo>
-                    - Have a diabetic cat named Maisie
+                    - I have a 9-year old, diabetic cat, named Maisie.
                 </SubInfo>
                 <SubInfo>
-                    - Have been skydiving for 6 years and am close to 500 jumps
+                    - I have been skydiving for 6 years and have completed 470 jumps.
                 </SubInfo>
             </ContentColumn>
         </ContentContainer>
     ]
 
     return (
-        <PageColorWrapper>
-            <AboutPageWrapper>
-                <AboutImageWrapper>
-                    <img
-                        style={{ 
-                            position: 'relative',
-                            height: '100%', 
-                            borderRadius: '20px',
-                            boxShadow: '-10px 10px 10px rgba(15,34,45,10)' }}
-                        src={travel} 
-                        loading="lazy" 
-                        alt="logo"
-                    />
-                    <img
-                        style={{ 
-                            position: 'relative',
-                            height: '100%', 
-                            borderRadius: '20px',
-                            boxShadow: '-10px 10px 10px rgba(15,34,45,10)' }}
-                        src={maisie} 
-                        loading="lazy" 
-                        alt="logo"
-                    />
-                    <img
-                        style={{ 
-                            position: 'relative',
-                            height: '100%', 
-                            borderRadius: '20px',
-                            boxShadow: '-10px 10px 10px rgba(15,34,45,10)' }}
-                        src={skydiving} 
-                        loading="lazy" 
-                        alt="logo"
-                    />
-                </AboutImageWrapper>
-                <AboutContentWrapper>
-                    <ZOBox
-                        height='auto'
-                        width='70%'
-                        content={AboutContent}
-                    />
+        <AboutPageWrapper>
+            <AboutImageWrapper>
+                <img
+                    style={{ 
+                        position: 'relative',
+                        height: '100%', 
+                        borderRadius: '20px',
+                        boxShadow: '-10px 10px 10px rgba(15,34,45,10)' }}
+                    src={travel} 
+                    loading="lazy" 
+                    alt="logo"
+                />
+                <img
+                    style={{ 
+                        position: 'relative',
+                        height: '100%', 
+                        borderRadius: '20px',
+                        boxShadow: '-10px 10px 10px rgba(15,34,45,10)' }}
+                    src={maisie} 
+                    loading="lazy" 
+                    alt="logo"
+                />
+                <img
+                    style={{ 
+                        position: 'relative',
+                        height: '100%', 
+                        borderRadius: '20px',
+                        boxShadow: '-10px 10px 10px rgba(15,34,45,10)' }}
+                    src={skydiving} 
+                    loading="lazy" 
+                    alt="logo"
+                />
+            </AboutImageWrapper>
+            <AboutContentWrapper>
+                <ZOBox
+                    height='100%'
+                    width='70%'
+                    content={AboutContent}
+                />
 
-                </AboutContentWrapper>
-            </AboutPageWrapper>
-        </PageColorWrapper>
+            </AboutContentWrapper>
+        </AboutPageWrapper>
     );
 }
 export default About

@@ -47,18 +47,17 @@ export const ContentColumn = styled.div`
     justify-content: center;
     //align-items: center;
     flex-direction: column;
-    //overflow: auto;
-    //padding: 5px;
 `;
 
 export const SubHeader = styled.h1`
-    font-size: 35px;
+    font-size: 30px;
     color: rgba(235,231,217,255);
     align: center;
+    text-decoration: underline;
 `;
 
 export const SubInfo = styled.h2`
-    font-size: 20px;
+    font-size: 18px;
     color: rgba(235,231,217,255);
     line-height: 22px;
     align: left;
