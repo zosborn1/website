@@ -1,8 +1,10 @@
 import { JSX } from "react/jsx-runtime";
 import { IPresentationProps } from "./types";
-import { PageColorWrapper } from "../../../styles/global-styles";
+import { 
+} from "../../../styles/global-styles";
 import { Typography } from "@mui/material";
 import ZOBox from "../../molecules/ZOBox/ZOBox";
+import { PresentationPageWrapper } from "./styles";
 
 const Presentation = ({ children }: IPresentationProps): JSX.Element => {
     const Main = [
@@ -19,11 +21,8 @@ const Presentation = ({ children }: IPresentationProps): JSX.Element => {
         </>
     ]
     return (
-        <PageColorWrapper>
-            <ZOBox content={Main}>
-                
-            </ZOBox>
-        </PageColorWrapper>
+        <PresentationPageWrapper>
+        </PresentationPageWrapper>
     );
 }
 export default Presentation

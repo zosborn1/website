@@ -1,22 +1,18 @@
 import { JSX } from "react/jsx-runtime";
-import { PageColorWrapper } from "../../../styles/global-styles";
 import { IAboutProps } from "./types";
-import { Typography } from "@mui/material";
 import { 
     AboutPageWrapper, 
     AboutContentWrapper, 
-    AboutImageWrapper, 
+    AboutImageWrapper,
     ContentContainer,
     ContentColumn,
-    SubHeader,
-    SubInfo
 } from "./styles";
 import ZOBox from "../../molecules/ZOBox/ZOBox";
 
 import travel from '../../../assets/travel.jpeg';
 import maisie from '../../../assets/maisie.jpeg';
 import skydiving from '../../../assets/skydiving.jpg';
-import uwMadison from '../../../assets/uwMadison.png';
+import { SubHeader, SubInfo } from "../../../styles/global-styles";
 
 const About = ({ children }: IAboutProps): JSX.Element => {
 

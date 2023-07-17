@@ -5,6 +5,8 @@ export const AboutPageWrapper = styled.div`
     height: 100vh;
     width: 100%;
     display: flex;
+    margin-top: 50px;
+    //margin-bottom: 200px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -22,7 +24,7 @@ export const AboutContentWrapper = styled.div`
 `;
 
 export const AboutImageWrapper = styled.div`
-    height: 25%;
+    height: 40%;
     width: 90%;
     margin: 50px 20px 50px 20px;
     //border: red solid 1px;
@@ -49,16 +51,4 @@ export const ContentColumn = styled.div`
     flex-direction: column;
 `;
 
-export const SubHeader = styled.h1`
-    font-size: 30px;
-    color: rgba(235,231,217,255);
-    align: center;
-    text-decoration: underline;
-`;
 
-export const SubInfo = styled.h2`
-    font-size: 18px;
-    color: rgba(235,231,217,255);
-    line-height: 22px;
-    align: left;
-`;

@@ -2,7 +2,6 @@ import { JSX } from "react/jsx-runtime";
 import { INavBarProps } from "./types";
 import { 
   ZONoneMobileContent,
-  ZOLink,
   ZOToolbar,
   ZOHomeButton,
   ZOLogo
@@ -11,6 +10,7 @@ import logo from '../../../assets/navLogo.jpg';
 import HomeIcon from '@mui/icons-material/Home';
 import { Link } from 'react-router-dom';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { ZOLink } from "../../../styles/global-styles";
 
 const Navbar = ({ children }: INavBarProps): JSX.Element => {
 
