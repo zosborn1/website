@@ -15,7 +15,7 @@ export const AboutPageWrapper = styled.div`
 export const AboutContentWrapper = styled.div`
     height: 45%;
     width: 90%;
-    margin: 50px 20px 50px 20px;
+    margin: 10px 20px 50px 20px;
     //border: red solid 1px;
     display: flex;
     justify-content: center;
@@ -26,7 +26,7 @@ export const AboutContentWrapper = styled.div`
 export const AboutImageWrapper = styled.div`
     height: 40%;
     width: 90%;
-    margin: 50px 20px 50px 20px;
+    margin: 50px 20px 10px 20px;
     //border: red solid 1px;
     display: flex;
     justify-content: space-evenly;
