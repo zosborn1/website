@@ -47,7 +47,6 @@ const Navbar = ({ children }: INavBarProps): JSX.Element => {
       <ZONoneMobileContent >
         {menuSelections.map((section) => (
           <ZOLink
-            color="inherit"
             key={section.title}
             to={section.url}
           >

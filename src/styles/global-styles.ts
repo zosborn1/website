@@ -22,7 +22,7 @@ export const ZOLink = styled(NavLink )`
     border: 1px solid rgb(78,47,48,255);
     border-radius: 10px;
     background: rgba(245,95,57,255);
-    text-decoration:none;
+    text-decoration: none;
 `;
 
 
