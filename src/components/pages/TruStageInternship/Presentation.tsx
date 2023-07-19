@@ -6,42 +6,37 @@ import {
     ButtonWrapper,
     PresentationContentWrapper,
     PresentationNavWrapper, 
-    PresentationPageWrapper 
+    PresentationPageWrapper, 
+    SlideWrapper
 } from "./styles";
 import React from "react";
 import { Button } from "@mui/material";
-import { inherits } from "util";
-
+import TeamSlide from "../../molecules/TeamSlide/TeamSlide";
+import GoalsSlide from "../../molecules/GoalsSlide/GoalsSlide";
+import LessonsSlide from "../../molecules/LessonsSlide/LessonsSlide";
+import FinalSlide from "../../molecules/FinalSlide/FinalSlide";
 
 const Presentation = ({ children }: IPresentationProps): JSX.Element => {
 
     const Team = [
-        <>
-            <SubInfo>
-                team
-            </SubInfo>
-        </>
+        <SlideWrapper>
+            <TeamSlide/>
+        </SlideWrapper>
     ]
     const Goals = [
-        <>
-            <SubInfo>
-                Goals
-            </SubInfo>
-        </>
+        <SlideWrapper>
+            <GoalsSlide/>
+        </SlideWrapper>
     ]
     const Lessons = [
-        <>
-            <SubInfo>
-                Lessons
-            </SubInfo>
-        </>
+        <SlideWrapper>
+            <LessonsSlide/>
+        </SlideWrapper>
     ]
     const Final = [
-        <>
-            <SubInfo>
-                Final
-            </SubInfo>
-        </>
+        <SlideWrapper>
+            <FinalSlide/>
+        </SlideWrapper>
     ]
 
     const [currentSlide, setCurrentSlide] = React.useState(Team);
@@ -63,9 +58,10 @@ const Presentation = ({ children }: IPresentationProps): JSX.Element => {
                                 height: 'inherit',
                                 width: 'inherit',
                                 fontSize: '25px',
-                                background: 'rgb(245,95,57,255)',
+                                background: 'rgb(255, 152, 100)',
                                 border: '1px solid rgb(78,47,48,255)',
-                                borderRadius: '15px'
+                                borderRadius: '15px',
+                                fontWeight: '700'
                             }}
                             color='inherit'
                             size="large"

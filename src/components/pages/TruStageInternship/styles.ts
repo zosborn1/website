@@ -34,3 +34,13 @@ export const ButtonWrapper = styled.div`
     margin: 10px;
     color: rgba(15,34,45,255);
 `;
+
+export const SlideWrapper = styled.div`
+    border: blue solid 1px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+`;

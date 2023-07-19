@@ -14,14 +14,14 @@ export const FooterPadding = styled(Footer)`
 
 export const ZOLink = styled(NavLink )`
     font-size: 25px;
-    font-weight: 200;
+    font-weight: 500;
     flex-wrap: wrap;
     padding: 5px;
     margin: 10px;
     color: rgba(15,34,45,255);
     border: 1px solid rgb(78,47,48,255);
     border-radius: 10px;
-    background: rgba(245,95,57,255);
+    background: rgb(255, 152, 100);
     text-decoration: none;
 `;
 
