@@ -36,7 +36,7 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const SlideWrapper = styled.div`
-    border: blue solid 1px;
+    //border: blue solid 1px;
     height: 100%;
     width: 100%;
     display: flex;

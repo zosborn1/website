@@ -1,5 +1,4 @@
-import { SubHeader, SubInfo, ZOLink } from "../../../styles/global-styles";
-import { SlideColumn, SlideRow } from "./styles";
+import { SlideColumn, SlideRow, SubHeader, SubInfo, ZOLink } from "../../../styles/global-styles";
 import { ITeamSlideProps } from "./types"
 import cyberShark from '../../../assets/cyberShark.png';
 
@@ -11,7 +10,7 @@ const TeamSlide = ({ children }: ITeamSlideProps): JSX.Element => {
                 Team Information
             </SubHeader>
             <SlideRow style={{height: '35%'}}>
-                <SlideColumn>
+                <SlideColumn style={{height: '100%'}}>
                     <SubInfo>
                         IT Talent Manager: Eric Russell
                     </SubInfo>
