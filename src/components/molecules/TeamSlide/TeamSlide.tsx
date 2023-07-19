@@ -48,7 +48,7 @@ const TeamSlide = ({ children }: ITeamSlideProps): JSX.Element => {
                         to="https://paymentguard.trustagedemo.com/?did"  target="_blank"
                         style={{background: '#FAE07E', color: '#193062', fontWeight: '600'}}
                     >
-                        Demo of Payment Guard
+                        Click for Demo of Payment Guard
                     </ZOLink>
                 </SlideColumn>
             </SlideRow>

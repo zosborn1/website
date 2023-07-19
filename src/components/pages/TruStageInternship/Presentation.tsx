@@ -1,6 +1,6 @@
 import { JSX } from "react/jsx-runtime";
 import { IPresentationProps } from "./types";
-import { SubInfo } from "../../../styles/global-styles";
+import { SubHeader, SubInfo } from "../../../styles/global-styles";
 import ZOBox from "../../molecules/ZOBox/ZOBox";
 import { 
     ButtonWrapper,
@@ -51,6 +51,9 @@ const Presentation = ({ children }: IPresentationProps): JSX.Element => {
     return (
         <PresentationPageWrapper>
             <PresentationNavWrapper>
+                <SubHeader>
+                    Click Slides Below
+                </SubHeader>
                 {slides.map((section) => (
                     <ButtonWrapper>
                         <Button

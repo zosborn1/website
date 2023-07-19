@@ -60,7 +60,7 @@ const GoalsSlide = ({ children }: IGoalsSlideProps): JSX.Element => {
                 to="https://paymentguard.trustagedemo.com/?did"  target="_blank"
                 style={{background: '#FAE07E', color: '#193062', fontWeight: '600'}}
             >
-                Demo of Payment Guard
+                Click for Demo of Payment Guard
             </ZOLink>
         </>
     ]
@@ -153,7 +153,7 @@ const GoalsSlide = ({ children }: IGoalsSlideProps): JSX.Element => {
                             color='inherit'
                             size="large"
                             variant="contained"
-                        onClick={handleOpen1}>Open Goal</Button>
+                        onClick={handleOpen1}>Click to Open Goal</Button>
                         <Modal
                         open={open1}
                         onClose={handleClose1}
@@ -174,7 +174,7 @@ const GoalsSlide = ({ children }: IGoalsSlideProps): JSX.Element => {
                             color='inherit'
                             size="large"
                             variant="contained"
-                        onClick={handleOpen2}>Open Goal</Button>
+                        onClick={handleOpen2}>Click to Open Goal</Button>
                         <Modal
                         open={open2}
                         onClose={handleClose2}
@@ -217,7 +217,7 @@ const GoalsSlide = ({ children }: IGoalsSlideProps): JSX.Element => {
                             color='inherit'
                             size="large"
                             variant="contained"
-                        onClick={handleOpen3}>Open Goal</Button>
+                        onClick={handleOpen3}>Click to Open Goal</Button>
                         <Modal
                         open={open3}
                         onClose={handleClose3}
