@@ -44,12 +44,12 @@ const TeamSlide = ({ children }: ITeamSlideProps): JSX.Element => {
                     <SubInfo>
                         DLI - Digital Lending Insurance
                     </SubInfo>
-                    <ZOLink
+                    {/* <ZOLink
                         to="https://paymentguard.trustagedemo.com/?did"  target="_blank"
                         style={{background: '#FAE07E', color: '#193062', fontWeight: '600'}}
                     >
                         Click for Demo of Payment Guard
-                    </ZOLink>
+                    </ZOLink> */}
                 </SlideColumn>
             </SlideRow>
         </>

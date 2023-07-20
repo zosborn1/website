@@ -9,11 +9,11 @@ const Home = ({ children }: IHomeProps): JSX.Element => {
 
     const WelcomeContent = [
         <WelcomeContentWrapper>
-            <SubHeader style={{fontSize: 60, justifySelf: 'center'}}>
+            <SubHeader style={{fontSize: 80, justifySelf: 'center'}}>
                 Welcome
             </SubHeader>
             <br/>
-            <SubInfo style={{fontSize: 40}}>
+            {/* <SubInfo style={{fontSize: 40}}>
                 Please click the tabs above:
             </SubInfo>
             <SubInfo style={{fontSize: 20}}>
@@ -21,7 +21,7 @@ const Home = ({ children }: IHomeProps): JSX.Element => {
             </SubInfo>
             <SubInfo style={{fontSize: 20}}>
                 - Presentation - to learn about my current internship at Trustage
-            </SubInfo>
+            </SubInfo> */}
         </WelcomeContentWrapper>
     ]
     
